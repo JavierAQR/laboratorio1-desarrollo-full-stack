@@ -4,32 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Document</title>
+    <title>Tienda de Ropa</title>
 </head>
-<body class=" bg-black/30">
-    <nav class="flex bg-black/80 p-2 gap-10 px-10 text-white text-2xl">
-        <div class="w-20 h-20 object-cover">
-            <img src="https://img.freepik.com/vector-gratis/diseno-logo-tienda-ropa-dibujado-mano_23-2149499592.jpg?semt=ais_hybrid&w=740&q=80" alt="">
+<body class="bg-black/30">
+    <nav class="flex bg-black/80 p-2 gap-10 px-10 text-white text-2xl items-center">
+        <div class="w-20 h-20">
+            <img class="w-full h-full object-cover rounded-full border-2 border-white/50" src="https://img.freepik.com/vector-gratis/diseno-logo-tienda-ropa-dibujado-mano_23-2149499592.jpg?semt=ais_hybrid&w=740&q=80" alt="Logo Tienda">
         </div>
         <ul class="flex justify-center items-center gap-10 w-full">
-            <li>
-                Inicio
-            </li>
-            <li>
-                Productos
-            </li>
-            <li>
-                Sobre Nosotros
-            </li>
+            <li class="hover:text-yellow-300 cursor-pointer">Inicio</li>
+            <li class="hover:text-yellow-300 cursor-pointer">Productos</li>
+            <li class="hover:text-yellow-300 cursor-pointer">Sobre Nosotros</li>
         </ul>
-        <div class="flex">
-            <button>
-                Carrito
+        <div>
+            <button class="bg-yellow-400 hover:bg-yellow-500 text-black px-4 py-2 rounded-lg font-bold transition">
+                🛒
             </button>
         </div>
     </nav>
-    <main class="min-h-screen">
 
+    <main class="min-h-screen p-10">
+        <h1 class="text-4xl font-bold text-center text-white mb-10">Nuestros Productos</h1>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition">
+                <img class="w-full h-64 object-cover" src="https://img.freepik.com/foto-gratis/retrato-hermosa-mujer-asiatica-ropa-informal_74190-2126.jpg" alt="Camisa Casual">
+                <div class="p-5">
+                    <h2 class="text-xl font-bold">Camisa Casual</h2>
+                    <p class="text-gray-600 mb-3">Perfecta para el día a día, cómoda y elegante.</p>
+                    <p class="text-lg font-bold text-yellow-500 mb-4">$25.00</p>
+                    <button class="bg-black text-white px-4 py-2 rounded-lg hover:bg-yellow-500 hover:text-black transition w-full">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition">
+                <img class="w-full h-64 object-cover" src="https://img.freepik.com/foto-gratis/retrato-hombre-joven-moda_23-2149437095.jpg" alt="Chaqueta de Cuero">
+                <div class="p-5">
+                    <h2 class="text-xl font-bold">Chaqueta de Cuero</h2>
+                    <p class="text-gray-600 mb-3">Estilo moderno y resistente para cualquier ocasión.</p>
+                    <p class="text-lg font-bold text-yellow-500 mb-4">$70.00</p>
+                    <button class="bg-black text-white px-4 py-2 rounded-lg hover:bg-yellow-500 hover:text-black transition w-full">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition">
+                <img class="w-full h-64 object-cover" src="https://img.freepik.com/foto-gratis/retrato-mujer-joven-sonriente-ropa-informal_171337-18513.jpg" alt="Vestido de Verano">
+                <div class="p-5">
+                    <h2 class="text-xl font-bold">Vestido de Verano</h2>
+                    <p class="text-gray-600 mb-3">Ligero y fresco, ideal para días soleados.</p>
+                    <p class="text-lg font-bold text-yellow-500 mb-4">$40.00</p>
+                    <button class="bg-black text-white px-4 py-2 rounded-lg hover:bg-yellow-500 hover:text-black transition w-full">Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>
